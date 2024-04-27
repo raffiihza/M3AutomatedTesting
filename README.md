@@ -32,4 +32,6 @@ jika sudah memenuhi kriteria diatas teman-teman bisa melakukan clone pada projec
 11. Jalankan aplikasi dengan perintah 
 `$ php artisan serve`
 
+12. Sesuaikan variabel `APP_URL` di file `.env`
+
 Selamat mengerjakan ya :)
