@@ -23,13 +23,13 @@ jika sudah memenuhi kriteria diatas teman-teman bisa melakukan clone pada projec
 7. `$ composer require laravel/dusk:*`
 
 8. `$ php artisan dusk:install`
-9. 
-10. `$ php artisan dusk:chrome-driver`
 
-11. migrate database dengan perintah 
+9. `$ php artisan dusk:chrome-driver`
+
+10. migrate database dengan perintah 
 `$ php artisan migrate`
 
-12. jalankan aplikasi dengan perintah 
+11. jalankan aplikasi dengan perintah 
 `$ php artisan serve`
 
 Selamat mengerjakan ya :)
