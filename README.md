@@ -26,10 +26,10 @@ jika sudah memenuhi kriteria diatas teman-teman bisa melakukan clone pada projec
 
 9. `$ php artisan dusk:chrome-driver`
 
-10. migrate database dengan perintah 
+10. Migrate database dengan perintah 
 `$ php artisan migrate`
 
-11. jalankan aplikasi dengan perintah 
+11. Jalankan aplikasi dengan perintah 
 `$ php artisan serve`
 
 Selamat mengerjakan ya :)
