@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Laravel\Dusk\Browser;
 use Tests\DuskTestCase;
 
-class MakePostTest extends DuskTestCase
+class CreatePostTest extends DuskTestCase
 {
     /**
      * A Dusk test example.
@@ -22,16 +22,14 @@ class MakePostTest extends DuskTestCase
                 ->press('Login')
                 ->assertSee('Selamat Datang di praktikum Rancang Perangkat Lunak (RPL) tahun 2023');
 
-            // ->assertPathIs('/post');
-
-            // $browser->visit('/')
-            //     // ->assertSee('All Posts from ead laboratory')
-            //     ->clickLink('Create new post')
-            //     ->assertPathIs('/post/create')
-            //     ->type('title', 'Hihihihi')
-            //     ->type('description', 'Awokwokwkwokowkowkokw')
-            //     ->press('Create')
-            //     ->assertPathIs('/post');
+            $browser->visit('/post')
+                ->assertSee('All Posts from ead laboratory')
+                ->press('Create new post')
+                ->assertPathIs('/post/create')
+                ->type('title', 'Hihihihi')
+                ->type('description', 'Awokwokwkwokowkowkokw')
+                ->press('Create')
+                ->assertPathIs('/post');
         });
     }
 }
