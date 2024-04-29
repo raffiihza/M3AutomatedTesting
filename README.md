@@ -20,7 +20,7 @@ jika sudah memenuhi kriteria diatas teman-teman bisa melakukan clone pada projec
 
 6. Generate key dengan perintah `$ php artisan key:generate`
 
-7. `$ composer require laravel/dusk:*`
+7. `$ composer require laravel/dusk --dev`
 
 8. `$ php artisan dusk:install`
 
