@@ -14,13 +14,14 @@ class MakePostTest extends DuskTestCase
     public function testExample(): void
     {
         $this->browse(function (Browser $browser) {
-            $browser->visit('/login')
-
-
-                ->type('email', 'bebas@gmail.com')
-                ->type('password', 'bebas12345')
-                ->press('Login')
-                ->assertSee('Selamat Datang di praktikum Rancang Perangkat Lunak (RPL) tahun 2023');
+            $browser->visit('/')
+                    ->assertSee('Enterprise Application Development')
+                    ->clickLink('Log in')
+                    ->assertPathIs('/login')
+                    ->type('email', 'ilham.satria09@gmail.com')
+                    ->type('password', '12345678')
+                    ->press('Login')
+                    ->assertPathIs('/home');
         });
     }
 }
