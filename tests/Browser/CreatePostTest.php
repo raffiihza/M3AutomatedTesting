@@ -17,8 +17,8 @@ class CreatePostTest extends DuskTestCase
             $browser->visit('/login')
 
 
-                ->type('email', 'bebas@gmail.com')
-                ->type('password', 'bebas12345')
+                ->type('email', 'jamet@gmail.com')
+                ->type('password', 'jamet12345')
                 ->press('Login')
                 ->assertSee('Selamat Datang di praktikum Rancang Perangkat Lunak (RPL) tahun 2023');
 
